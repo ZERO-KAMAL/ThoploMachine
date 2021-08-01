@@ -7,6 +7,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -22,7 +23,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Jost", sans-serif;
 }
 
@@ -139,7 +145,8 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
-#header.header-scrolled, #header.header-inner-pages {
+#header.header-scrolled,
+#header.header-inner-pages {
   background: rgba(40, 58, 90, 0.9);
 }
 
@@ -169,7 +176,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,13 +195,17 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #47b2e4;
 }
 
@@ -278,7 +290,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #37517e;
 }
 
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #47b2e4;
 }
 
@@ -457,7 +471,7 @@ section {
 }
 
 .section-title h2::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 120px;
@@ -468,7 +482,7 @@ section {
 }
 
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 40px;
@@ -478,7 +492,7 @@ section {
   left: calc(50% - 20px);
 }
 
-.section-title p {
+.section-title h2 p {
   margin-bottom: 0;
 }
 
@@ -723,7 +737,8 @@ section {
 }
 
 @media (max-width: 1024px) {
-  .why-us .content, .why-us .accordion-list {
+  .why-us .content,
+  .why-us .accordion-list {
     padding-left: 0;
     padding-right: 0;
   }
@@ -773,8 +788,8 @@ section {
 }
 
 .services .icon-box .icon .icon-img {
-  -webkit-transition: .45s ease all;
-  transition: .45s ease all;
+  -webkit-transition: 0.45s ease all;
+  transition: 0.45s ease all;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,7 +968,7 @@ section {
 }
 
 .team .member span::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 50px;
@@ -1056,7 +1071,8 @@ section {
   color: #47b2e4;
 }
 
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -1181,7 +1197,9 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #47b2e4;
   color: #fff;
 }
@@ -1258,7 +1276,8 @@ section {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1266,7 +1285,8 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #47b2e4;
 }
 
@@ -1554,7 +1574,8 @@ section {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  #footer #footer .copyright, #footer #footer .credits {
+  #footer #footer .copyright,
+  #footer #footer .credits {
     text-align: center;
     float: none;
   }
@@ -1761,6 +1782,312 @@ section {
   .pricing .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Shop-details
+--------------------------------------------------------------*/
+.Shop-details {
+  /*===pic-Zoom===*/
+}
+
+.Shop-details img {
+  width: 100%;
+  display: block;
+}
+
+.Shop-details .img-display {
+  overflow: hidden;
+}
+
+.Shop-details .img-showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.Shop-details .img-showcase img {
+  min-width: 100%;
+  height: 480px;
+}
+
+.Shop-details .img-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Shop-details .img-item {
+  margin: 0.3rem;
+}
+
+.Shop-details .img-item:nth-child(1),
+.Shop-details .img-item:nth-child(2),
+.Shop-details .img-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.Shop-details .img-item:hover {
+  opacity: 0.8;
+}
+
+.Shop-details .product-content {
+  padding: 2rem 1rem;
+}
+
+.Shop-details .product-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #37517e;
+  margin: 1rem 0;
+}
+
+.Shop-details .product-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 80px;
+  background: #12263a;
+}
+
+.Shop-details .product-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  background: #37517e;
+  color: #fff;
+  padding: 0 0.3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.Shop-details .product-link:hover {
+  opacity: 0.9;
+}
+
+.Shop-details .product-rating {
+  color: #ffc107;
+}
+
+.Shop-details .product-rating span {
+  font-weight: 600;
+  color: #252525;
+}
+
+.Shop-details .product-price {
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.Shop-details .product-price span {
+  font-weight: 400;
+}
+
+.Shop-details .last-price span {
+  color: #f64749;
+  text-decoration: line-through;
+}
+
+.Shop-details .new-price span {
+  color: #256eff;
+}
+
+.Shop-details .product-detail h2 {
+  text-transform: capitalize;
+  color: #37517e;
+  padding-bottom: 0.6rem;
+}
+
+.Shop-details .product-detail p {
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  opacity: 0.8;
+}
+
+.Shop-details .product-detail ul {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.Shop-details .product-detail ul li {
+  margin: 0;
+  list-style: none;
+  background-size: 18px;
+  font-weight: 600;
+  opacity: 0.9;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.Shop-details .product-detail ul li .mark-tick {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #37517e;
+  border-radius: 50%;
+}
+
+.Shop-details .product-detail ul li .mark-tick i {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  margin: 0 0.2rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.Shop-details .product-detail ul li span {
+  font-weight: 400;
+}
+
+.Shop-details .purchase-info {
+  margin: 1.5rem 0;
+}
+
+.Shop-details .purchase-info input,
+.Shop-details .purchase-info .btn {
+  border: 1.5px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  outline: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.Shop-details .purchase-info input {
+  width: 60px;
+}
+
+.Shop-details .purchase-info .btn {
+  cursor: pointer;
+  color: #fff;
+}
+
+.Shop-details .purchase-info .btn:first-of-type {
+  background: #256eff;
+}
+
+.Shop-details .purchase-info .btn:last-of-type {
+  background: #f64749;
+}
+
+.Shop-details .purchase-info .btn:hover {
+  opacity: 0.9;
+}
+
+.Shop-details .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Shop-details .social-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #37517e;
+  border: 1px solid #37517e;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 0.8rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.Shop-details .social-links a:hover {
+  background: #37517e;
+  border-color: transparent;
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .Shop-details .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+  .Shop-details .card-wrapper {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Shop-details .product-imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Shop-details .product-content {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Shop-details .img-showcase img {
+    min-width: 100%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
