@@ -1437,7 +1437,7 @@ ol {
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 28px 11px 28px;
+    padding: 5px 20px;
     border-radius: 50px;
     transition: 0.5s;
     margin: 10px 0 0 0;
@@ -1447,5 +1447,22 @@ ol {
     &:hover{
       background: #209dd8 !important;
     }
+  }
+  .card-body{
+    a{
+      text-decoration: underline;
+    }
+  }
+}
+// Blog inner
+
+.blog-inner{
+  .card-block{
+    margin-top: 5px;
+    padding: 10px;
+    h5{
+      text-transform: uppercase;
+      font-size: 1rem;
+ }  
   }
 }
