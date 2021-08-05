@@ -639,127 +639,101 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us .content {
-  padding: 60px 100px 0 100px;
+.gallery .image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
-.why-us .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-  color: #37517e;
+.gallery .image img {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.why-us .content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 5px;
+.gallery .image img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.why-us .content p {
-  font-size: 15px;
-  color: #848484;
+.gallery .content {
+  margin-top: 80px;
 }
 
-.why-us .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.why-us .accordion-list {
-  padding: 0 100px 60px 100px;
-}
-
-.why-us .accordion-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.why-us .accordion-list ul li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-}
-
-.why-us .accordion-list .accordion-list li + li {
-  margin-top: 15px;
-}
-
-.why-us .accordion-list a {
-  display: block;
+.gallery .content .content-item {
   position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding-right: 30px;
-  outline: none;
-  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.why-us .accordion-list span {
-  color: #47b2e4;
-  font-weight: 600;
-  font-size: 18px;
-  padding-right: 10px;
+.gallery .content .content-item .visibility-content {
+  display: none;
 }
 
-.why-us .accordion-list i {
-  font-size: 24px;
+.gallery .content .content-item:hover .visibility-content {
+  display: block;
+}
+
+.gallery .content .content-item::after {
   position: absolute;
+  top: -15px;
   right: 0;
-  top: 0;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: black;
+  height: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.why-us .accordion-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
+.gallery .content .content-item:hover::after {
+  width: 100%;
 }
 
-.why-us .accordion-list .icon-show {
-  display: none;
+.gallery .content .content-item span {
+  color: black;
+  font-weight: 600;
 }
 
-.why-us .accordion-list a.collapsed {
-  color: #343a40;
+.gallery .content .content-item a {
+  text-align: start;
+  margin-left: 115px;
+  position: relative;
+  left: -115px;
+  top: 22px;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid black;
 }
 
-.why-us .accordion-list a.collapsed:hover {
-  color: #47b2e4;
+.gallery .content .content-item a::after,
+.gallery .content .content-item a ::before {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.why-us .accordion-list a.collapsed .icon-show {
-  display: inline-block;
+.gallery .content .content-item a::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: black;
+  height: 2px;
 }
 
-.why-us .accordion-list a.collapsed .icon-close {
-  display: none;
+.gallery .content .content-item a:hover::after {
+  width: 100%;
 }
 
-@media (max-width: 1024px) {
-  .why-us .content,
-  .why-us .accordion-list {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .why-us .img {
-    min-height: 400px;
-  }
-  .why-us .content {
-    padding-top: 30px;
-  }
-  .why-us .accordion-list {
-    padding-bottom: 30px;
-  }
-}
-
-@media (max-width: 575px) {
-  .why-us .img {
-    min-height: 200px;
-  }
+.gallery .content .content-item a:hover {
+  border-bottom: none;
 }
 
 /*--------------------------------------------------------------

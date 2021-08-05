@@ -279,3 +279,8 @@ function slideImage(){
 
 window.addEventListener('resize', slideImage);
 
+//why us
+function changeImg(imgchanger) {
+  document.getElementById('slider').src = imgchanger;
+  
+}
