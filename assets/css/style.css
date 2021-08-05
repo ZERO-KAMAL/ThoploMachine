@@ -639,6 +639,11 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+.gallery {
+  -webkit-box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
 .gallery .image {
   width: 100%;
   overflow: hidden;
@@ -681,7 +686,7 @@ section {
   width: 0%;
   content: ".";
   color: transparent;
-  background: black;
+  background: #37517e;
   height: 2px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -706,7 +711,7 @@ section {
   color: black;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #37517e;
 }
 
 .gallery .content .content-item a::after,
@@ -724,7 +729,7 @@ section {
   width: 0%;
   content: ".";
   color: transparent;
-  background: black;
+  background: #37517e;
   height: 2px;
 }
 
@@ -734,6 +739,41 @@ section {
 
 .gallery .content .content-item a:hover {
   border-bottom: none;
+}
+
+@media (max-width: 1024px) {
+  .gallery .content,
+  .gallery span {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery .img {
+    min-height: 100%;
+  }
+  .gallery .content {
+    margin-top: 0px;
+  }
+  .gallery h4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery .img {
+    min-height: 200px;
+  }
+  .gallery h4 {
+    text-align: center;
+  }
+  .gallery .content {
+    margin-top: 30px !important;
+  }
+  .gallery a {
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------
