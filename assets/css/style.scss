@@ -331,64 +331,65 @@ h6 {
   .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
-  @media (max-width: 991px) {
-    #hero {
-      height: 100vh;
+ 
+}
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+    .animated {
+      -webkit-animation: none;
+      animation: none;
+    }
+    .hero-img {
       text-align: center;
-      .animated {
-        -webkit-animation: none;
-        animation: none;
-      }
-      .hero-img {
-        text-align: center;
-      }
-      .hero-img img {
-        width: 50%;
-      }
+    }
+    .hero-img img {
+      width: 50%;
     }
   }
+}
 
-  @media (max-width: 768px) {
-    #hero h1 {
-      font-size: 28px;
-      line-height: 36px;
-    }
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
-    #hero .hero-img img {
-      width: 70%;
-    }
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
   }
-
-  @media (max-width: 575px) {
-    #hero .hero-img img {
-      width: 80%;
-    }
-    #hero .btn-get-started {
-      font-size: 16px;
-      padding: 10px 24px 11px 24px;
-    }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
   }
-
-  @-webkit-keyframes up-down {
-    0% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
+  #hero .hero-img img {
+    width: 70%;
   }
+}
 
-  @keyframes up-down {
-    0% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+  #hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 
@@ -516,7 +517,6 @@ section {
     margin-top: 10px;
   }
   @media (max-width: 991px) {
-    height: 100vh;
     text-align: center;
     .animated {
       -webkit-animation: none;
@@ -614,7 +614,7 @@ section {
         width: 100%;
       }
       span {
-        color: black;
+        color: #37517e;
         font-weight: 600;
       }
       a {
@@ -665,11 +665,8 @@ section {
 
 @media (max-width: 992px) {
   .gallery {
-    .img {
-      min-height: 100%;
-    }
     .content {
-      margin-top: 0px;
+      margin-top: 30px;
     }
     h4 {
       text-align: center;
