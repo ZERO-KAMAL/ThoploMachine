@@ -284,3 +284,7 @@ function changeImg(imgchanger) {
   document.getElementById('slider').src = imgchanger;
   
 }
+
+function loadImage(num)  {
+  vRdocument.getElementById('')
+}
