@@ -1567,6 +1567,9 @@ section {
 /* Blog */
 
 #blog {
+  a{
+    text-decoration: none !important;
+  }
   .card-img {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -1589,7 +1592,6 @@ section {
     font-size: 0.8rem;
   }
   .btn-info {
-    font-family: "Jost", sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -1606,9 +1608,13 @@ section {
     }
   }
   .card-body {
-    a {
-      text-decoration: underline;
+    .read-more{
+      border-bottom: 1px solid $Pc;
     }
+  }
+  .blog-row{
+    font-size: 0.8rem;
+  
   }
 }
 /* blog-inner */
@@ -1620,6 +1626,19 @@ section {
     h5 {
       text-transform: uppercase;
       font-size: 1rem;
+    }
+    a{
+      border-bottom: 1px solid $Cm;
+    }
+  }
+  .blog-row{
+    background-color: $Cm;
+    font-size: 1rem;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 10px;text-align: center;
+    i{
+      margin-right: 6px;
     }
   }
 }
