@@ -1613,6 +1613,15 @@ section {
         margin-right: 6px;
       }
     }
+    .category{
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 20px 0 20px 0px !important;
+      }
+    }
   }
 
   /*--------------------------------------------------------------

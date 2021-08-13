@@ -1807,6 +1807,15 @@ section {
   margin-right: 6px;
 }
 
+.blog-inner .category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0 20px 0px !important;
+}
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
